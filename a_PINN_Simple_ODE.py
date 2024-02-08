@@ -4,17 +4,11 @@ from matplotlib.animation import FuncAnimation
 import tensorflow as tf
 import random
 
-
-
-
-
 # Define Networks and Parameters
 
 NN = tf.keras.models.Sequential([
     tf.keras.layers.Input((1,)),
     tf.keras.layers.Dense(units=32, activation='tanh'),
-    tf.keras.layers.Dense(units=20, activation='tanh'),
-    tf.keras.layers.Dense(units=6, activation='tanh'),
     tf.keras.layers.Dense(units=1)
 ])
 
